@@ -1,8 +1,6 @@
-import { Injectable } from '@nestjs/common';
 import { HttpService } from '@nestjs/axios';
 import { IBot } from 'src/bots-module/Ibot-interface';
 
-@Injectable()
 export class ChuckNorris implements IBot {
   constructor(private readonly httpService: HttpService) {}
 
